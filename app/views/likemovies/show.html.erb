@@ -1,28 +1,38 @@
-<%= image_tag @likemovie.image.url(:medium) %>
-<p>
-  <strong>Title:</strong>
-  <%= @likemovie.title %>
-</p>
-
-<p>
-  <strong>Synopsis:</strong>
-  <%= @likemovie.synopsis %>
-</p>
-
-<p>
-  <strong>Movie length:</strong>
-  <%= @likemovie.movie_length %>
-</p>
-
-<p>
-  <strong>Director:</strong>
-  <%= @likemovie.director %>
-</p>
-
-<p>
-  <strong>Rating:</strong>
-  <%= @likemovie.rating %>
-</p>
+<div class="panel panel-default">
+  <div class="panel-body">
+    <div class="row">
+      <div>
+        <%= image_tag @likemovie.image.url(:medium) %>
+        <div class="table-responsive">
+          <table class="table">
+          <tbody>
+            <tr>
+              <td><strong>Title:</strong></td>
+              <td><%= @likemovie.title %></td>
+            </tr>
+            <tr>
+              <td><strong>Synopsis:</strong></td>
+              <td><%= @likemovie.synopsis %></td>
+            </tr>
+            <tr>
+              <td><strong>Movie length:</strong></td>
+              <td><%= @likemovie.movie_length %></td>
+            </tr>
+            <tr>
+              <td><strong>Director:</strong></td>
+              <td><%= @likemovie.director %></td>
+            </tr>
+            <tr>
+              <td><strong>Rating:</strong></td>
+              <td><%= @likemovie.rating %></td>
+            </tr>
+          </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
 
 <%= link_to 'Edit', edit_likemovie_path(@likemovie) %> |
 <%= link_to 'Back', likemovies_path %>

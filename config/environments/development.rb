@@ -53,4 +53,7 @@ Rails.application.configure do
   config.file_watcher = ActiveSupport::EventedFileUpdateChecker
   # needed for devise
   config.action_mailer.default_url_options = { host: 'localhost', port: 3000 }
+  # needed for paperclip
+  Paperclip.options[:command_path] = "/usr/bin/"
+
 end

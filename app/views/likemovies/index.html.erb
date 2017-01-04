@@ -1,0 +1,35 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Likemovies</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Title</th>
+      <th>Synopsis</th>
+      <th>Movie length</th>
+      <th>Director</th>
+      <th>Rating</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @likemovies.each do |likemovie| %>
+      <tr>
+        <td><%= likemovie.title %></td>
+        <td><%= likemovie.synopsis %></td>
+        <td><%= likemovie.movie_length %></td>
+        <td><%= likemovie.director %></td>
+        <td><%= likemovie.rating %></td>
+        <td><%= link_to 'Show', likemovie %></td>
+        <td><%= link_to 'Edit', edit_likemovie_path(likemovie) %></td>
+        <td><%= link_to 'Destroy', likemovie, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Likemovie', new_likemovie_path %>

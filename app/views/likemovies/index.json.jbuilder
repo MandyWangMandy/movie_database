@@ -1,0 +1,1 @@
+json.array! @likemovies, partial: 'likemovies/likemovie', as: :likemovie

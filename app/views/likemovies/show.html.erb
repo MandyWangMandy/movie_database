@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Title:</strong>
+  <%= @likemovie.title %>
+</p>
+
+<p>
+  <strong>Synopsis:</strong>
+  <%= @likemovie.synopsis %>
+</p>
+
+<p>
+  <strong>Movie length:</strong>
+  <%= @likemovie.movie_length %>
+</p>
+
+<p>
+  <strong>Director:</strong>
+  <%= @likemovie.director %>
+</p>
+
+<p>
+  <strong>Rating:</strong>
+  <%= @likemovie.rating %>
+</p>
+
+<%= link_to 'Edit', edit_likemovie_path(@likemovie) %> |
+<%= link_to 'Back', likemovies_path %>

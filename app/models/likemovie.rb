@@ -1,0 +1,2 @@
+class Likemovie < ApplicationRecord
+end

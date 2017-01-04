@@ -1,0 +1,1 @@
+json.partial! "likemovies/likemovie", likemovie: @likemovie

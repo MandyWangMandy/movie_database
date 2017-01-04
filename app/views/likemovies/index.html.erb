@@ -1,6 +1,6 @@
 <p id="notice"><%= notice %></p>
 
-<h1>Likemovies</h1>
+<h1>Movies</h1>
 
 <table>
   <thead>
@@ -17,6 +17,7 @@
   <tbody>
     <% @likemovies.each do |likemovie| %>
       <tr>
+        <td><%= image_tag likemovie.image.url(:medium) %></td>
         <td><%= likemovie.title %></td>
         <td><%= likemovie.synopsis %></td>
         <td><%= likemovie.movie_length %></td>

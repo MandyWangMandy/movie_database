@@ -69,6 +69,6 @@ class LikemoviesController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def likemovie_params
-      params.require(:likemovie).permit(:title, :synopsis, :movie_length, :director, :rating)
+      params.require(:likemovie).permit(:title, :synopsis, :movie_length, :director, :rating, :image)
     end
 end
